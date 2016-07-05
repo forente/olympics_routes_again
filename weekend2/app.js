@@ -3,7 +3,7 @@ $(function(){
   $('.randomGIF').on('click', function(event){
     $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC')
       .then(function(data){
-        // console.log(data);
+        console.log(data);
         var image = data.data.image_url;
         // console.log(data.data.image_url);
         $('.container1').empty();
